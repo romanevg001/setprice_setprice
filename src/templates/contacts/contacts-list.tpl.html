@@ -1,0 +1,33 @@
+﻿<div class="container">
+    <va-login-toolbar></va-login-toolbar>
+    <h3>Контакты</h3>
+
+    <div class="table-responsive" ng-class="{'__loading' : progress}">
+        <table class="table table-striped">
+            <tr>
+                <th>Имя</th>
+                <th>Email</th>
+            </tr>
+            <tr ng-repeat="item in allContacts">
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+            </tr>
+        </table>
+    </div>
+    <!--<div class="grid ">-->
+
+        <!--<div class="columns grid-header">-->
+            <!--<div class="column sort" ng-class="sortDirect['PhoneNumber']" ng-click="sort('PhoneNumber')">{{'clients.blades.member-list.labels.phone' | translate}} <i class="fa"></i></div>-->
+            <!--<div class="column">{{'clients.blades.member-list.labels.name' | translate}}</div>-->
+            <!--<div class="column sort" ng-class="sortDirect['LastName']" ng-click="sort('LastName')">{{'clients.blades.member-list.labels.lastName' | translate}} <i class="fa"></i></div>-->
+        <!--</div>-->
+        <!--<div class="columns grid-content" ng-repeat="data in blade.allClients"-->
+             <!--ng-click='selectNode(data)'>-->
+
+            <!--<div class="column ">{{data.PhoneNumberString}}</div>-->
+            <!--<div class="column ">{{data.FirstName}}</div>-->
+            <!--<div class="column">{{data.LastName}}</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+</div>
