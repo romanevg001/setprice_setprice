@@ -23,56 +23,10 @@
 
     "css": {
       "src": "css",
-      "dest": "css",
+      "dest": "css"
 
-      "autoprefixer": {
-        "browsers": ["last 3 version"]
-      },
-      "sass": {
-        "indentedSyntax": false
-      },
-      "extensions": ["sass", "scss", "css"]
-    },
-
-    "html": {
-      "src": "html",
-      "dest": "./",
-      "dataFile": "data/global.json",
-      "htmlmin": {
-        "collapseWhitespace": true
-      },
-      "locales": ["en", "ru"],
-      "extensions": ["html", "twig", "json"],
-      "excludeFolders": ["layouts", "shared", "macros", "data", "partials"]
-    },
-
-    "images": {
-      "src": "images",
-      "dest": "images",
-      "extensions": ["jpg", "png", "svg", "gif"]
-    },
-
-    "fonts": {
-      "src": "fonts",
-      "dest": "fonts",
-      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
-    },
-
-    "iconFont": {
-      "src": "icons",
-      "dest": "fonts",
-      "sassDest": "generated",
-      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
-    },
-
-    "svgSprite": {
-      "src": "sprites",
-      "dest": "images",
-      "extensions": ["svg"]
-    },
-
-    "rev": {
-      "enabled": false
+     
     }
+
   }
 }
