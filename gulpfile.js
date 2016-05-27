@@ -80,7 +80,7 @@ gulp.task('js', function(callback) {
 });
 
 gulp.task('copy',function(){
-    return gulp.src(path.resolve(config.root.src, "**/*.{html,ico}"))
+    return gulp.src(path.resolve(config.root.src, "**/*.{html,ico,css,otf,svg,ttf,woff,woff2}"))
         .pipe(gulp.dest(config.root.dest));
 });
 

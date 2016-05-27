@@ -2,14 +2,18 @@
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-               Brand
-            </a>
+
+        <div class="collapse navbar-collapse">
             <p class="navbar-text navbar-right">
-                <span class="user-name">{{user.username}}jhk</span>
-                <a class="sign-out" href="#" ng-click="logout()">Выйти</a>
+                <i class="fa fa-user"></i>
+                <strong>{{user.username}}</strong>
+                <a class="btn btn-default" href="#" ng-click="logout()">Выйти</a>
             </p>
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="contacts"><i class="fa fa-users"></i> Контакты</a></li>
+                <li><a ui-sref="contactsDetailNew"><i class="fa fa-user-plus"></i> Добавить контакт</a></li>
+            </ul>
         </div>
+
     </div>
 </nav>

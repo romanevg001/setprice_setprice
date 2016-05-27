@@ -1,16 +1,24 @@
-﻿<div class="container">
-    <va-login-toolbar></va-login-toolbar>
+﻿<va-login-toolbar></va-login-toolbar>
+<div class="container">
+
     <h3>Контакты</h3>
 
     <div class="table-responsive" ng-class="{'__loading' : progress}">
         <table class="table table-striped">
             <tr>
+                <th>#</th>
                 <th>Имя</th>
-                <th>Email</th>
+                <th>Телефоны</th>
+                <th></th>
             </tr>
             <tr ng-repeat="item in allContacts">
+                <td>{{$index+1}}</td>
                 <td>{{item.name}}</td>
-                <td>{{item.email}}</td>
+                <td><div ng-repeat="phone in item.phones">{{phone}}</div></td>
+                <td>
+                    <button class="btn btn-default"  ng-click="onContactEdit(item)"><i class="fa fa-pencil"></i></button>
+                    <button class="btn btn-default" ng-click="onContactDel(item)"><i class="fa fa-trash"></i></button>
+                </td>
             </tr>
         </table>
     </div>

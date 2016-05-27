@@ -5,7 +5,8 @@ angular.module('setprice')
         $stateProvider.state('registration', {
             url: '/registration',
             templateUrl: 'templates/security/registration.tpl.html',
-            controller: ['$rootScope', '$scope', 'registService', '$state', function ($rootScope, $scope, registService,$state) {
+            controller: ['$rootScope', '$scope', 'registService', '$state', '$localStorage',
+                function ($rootScope, $scope, registService, $state, $localStorage) {
 
                 $scope.user = {};
                 $scope.error = null;
@@ -18,8 +19,8 @@ angular.module('setprice')
                     $scope.progress = false;
                     registService.list($scope.user,function(data){
                         $scope.progress = false;
-
-
+                        $localStorage.setpriceUser = data;
+                        $state.go('login');
                     });
                 };
 

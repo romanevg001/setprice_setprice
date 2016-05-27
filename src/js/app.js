@@ -5,7 +5,9 @@
     var app = angular.module('setprice', [
         'ui.router',
         'ui.bootstrap',
-        'ngResource'
+        'ngResource',
+        'ngStorage',
+        'ui.mask'
     ]);
 
 
@@ -19,7 +21,7 @@
     app.config([ '$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
             $httpProvider.defaults.withCredentials = true;
             $httpProvider.defaults.useXDomain = true;
-            
+
             $urlRouterProvider.otherwise('/login');
         }
     ]);

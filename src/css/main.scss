@@ -1,4 +1,5 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../fonts/font-awesome.min.css";
 
 
 .wrap-window-center {
@@ -20,6 +21,11 @@
     //background: $brand-info;
   }
 }
+
+
+//.sign-out {
+//  font-size: .8em;
+//}
 
 .__loading {
   animation: A_loading 1.5s ease;
